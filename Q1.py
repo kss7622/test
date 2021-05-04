@@ -73,7 +73,11 @@ pos.sell_cake('Cheese Cake')
 pos.current_cakes()
 
 print()
+pos.sell_cake('Chocolate Cake')
+pos.current_cakes()
+
+print()
 pos.sell_cake('Cheese Cake')
 
 print()
-print(pos.money)
+pos.print_current_money()
