@@ -53,4 +53,4 @@ limit = 10 ** 5
 thread_num = 7
 count = Count()
 run_threads(worker, thread_num, limit, count)
-print(f"Counter should be {thread_num * limit}, found {count.count}")
+print(f"Result should be {thread_num * limit}, but the total count is {count.count}")
