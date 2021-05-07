@@ -49,7 +49,7 @@ def run_threads(func, thread_num, limit, count_obj):
         thread.join()
 
 
-limit = 10 ** 5
+limit = 10 ** 6
 thread_num = 7
 count = Count()
 run_threads(worker, thread_num, limit, count)
