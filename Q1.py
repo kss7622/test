@@ -1,30 +1,63 @@
 '''
-시작 시각 :
-종료 시각 :
++ 15:35 ~ 16:37
+시작 시각 : 22:51
+종료 시각 : 23:48
 '''
 
 
 class Cake:
-    def __init__(self):
-        pass
+    def __init__(self, name, price, ingredient):
+        self.name=name
+        self.price=price
+        self.ingredient=ingredient
 
 
 class Shop:
     def __init__(self):
-        pass
-
-    def buy_ingredient(self, buy_dict):
-        pass
-
+        self.ingredient={}
+        self.product={}
+        
+    def buy_ingredient(self, ingredient):
+        a=list(self.keys())
+        b=list(self.values())
+        for i in range (0,len(a)-1):
+            if a[i] in self:
+                self.ingredient[a[i]]+=b[i]
+            else:
+                self.ingredient[a[i]]=b[i]
+        global inventory
+        inventory=self.ingredient
+        return self.ingredient
+            
+            
     def current_ingredient(self):
-        pass
+        c=list(self.ingredient.keys())
+        d=list(self.ingredient.values())
+        for j in range (0,len(c)-1):
+            if d[i]=0:
+                remove(d[i])
+                remove(c[i])
+                j-=1
+        k="현재 보유한 재료는 "
+        print(k)
+        for i in range (0,len(c)-1):
+            if i=len(c)-1:
+                print(c[i],"(",d[i],"개)입니다.")
+            else:
+                print(c[i],"(",d[i],"개), ")
+        
 
-    def make_cake(self, cake):
+    def make_cake(self):
+        e=list(self.ingredient.keys())
+        f=list(self.ingredient.values())
+        x=0
+        for i in range (0,len(e)-1):
+            if (e[i] in inventory) and (f[i] in inventory) and (f[i]-inventory[e[i]]>=0):
         pass
 
 
 class Pos:
-    def __init__(self):
+    def __init__(self, cake_shop):
         pass
 
     def current_cakes(self):
